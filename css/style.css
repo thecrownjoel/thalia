@@ -13,6 +13,7 @@ body {
     text-align: center;
 }
 ul {
+    padding: 0;
     list-style: none;
 }
 .socials li {
@@ -45,6 +46,15 @@ ul {
     font-size: 1.375rem;
     color: blue;
   }
+
+  /* logo */
+  img {
+      height: auto;
+      max-width: 100%;
+  }
+  h1 {
+     text-align: center;
+  }
 /* Media Queries */
 @media only screen and (max-width: 990px) {
     body {
@@ -55,3 +65,4 @@ ul {
         margin: auto;
     }
 }
+
