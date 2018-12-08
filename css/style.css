@@ -5,7 +5,7 @@ body {
 }
 .container {
     border: 5px solid black;
-    max-width: 800px;
+    max-width: 900px;
 
 }
 .socials {
@@ -47,7 +47,11 @@ ul {
     color: blue;
   }
 
-  /* logo */
+
+
+
+
+  /* logos */
   img {
       height: auto;
       max-width: 100%;
@@ -55,8 +59,36 @@ ul {
   h1 {
      text-align: center;
   }
+  h2 {
+     text-align: center;
+  }
+  #title {
+      padding-bottom: 2vw;
+  }
+
+
+
+
+
+  /* buy buttons */
+  .buy-btns ul {
+      list-style: none;
+  }
+  .buy-btns {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+  }
+  .buy-btns li {
+    display: inline-block;
+    padding: 10px;
+  }
+
+
+
+
 /* Media Queries */
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1240px) {
     body {
         background: #ffafda;
     }
