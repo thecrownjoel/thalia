@@ -1,4 +1,6 @@
-$font-stack:    Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$font-stack: 'Montserrat', sans-serif;
 $primary-color: #333;
 $bg-color: #ffafda;
 
@@ -7,6 +9,23 @@ $bg-color: #ffafda;
 body {
     background: $bg-color url('../img/thalia-pic.jpg') right 0 no-repeat;
     background-size: 50% auto;
+}
+.btn {
+    background-color: #000;
+    border: .125rem solid #000;
+    color: #fff !important;
+    display: inline-block;
+    font-size: 1.125rem;
+    max-width: 100%;
+    padding: .625rem 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 14.5625rem;
+    font-family: $font-stack;
+    text-decoration: none;
+}
+h3 {
+    font-size: 3rem;
 }
 .container {
     border: 1px solid white;
@@ -63,7 +82,6 @@ ul {
 
 
 
-
   /* buy buttons */
   .buy-btns ul {
       list-style: none;
@@ -81,39 +99,39 @@ ul {
 
   /* YouTube box */
 
-  .hide {
-	display: none;
-  }
   
-  iframe{
-	position: absolute;
-  }
-  
-  .youtube-box #slider {
-	width: 640px;
-	margin: 0 auto;
-  }
-  
-  .youtube-box ul li {
-	margin: 0 0.2em;
-	display: inline;
-  }
-  
-  .youtube-box ul {
-   
-	height: 30px;
-	margin: 0;
-	height: 60px;
-	padding: 0;
-	text-align: center;
-  }
-  
-  .youtube-box #slider:first-child {
-  
-	 position: relative;
-  }
+/* Instagram */
+.insta-container {
+    border: 3px solid white;
+    margin: auto;
+    h3 {
+        font-weight: 700;
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-family: $font-stack;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        margin-bottom: 4.375rem;
+    }
+}
 
+/* Footer */
 
+.enterSite-center {
+    text-align: center;
+}
+
+.btn {
+    a:link, a:visited, a:active {
+        background-color: red;
+    }
+    a:hover {
+        background-color: #fff;
+        transition: all 0.3s;
+        color: #000;
+    }
+}
 
 /* Media Queries */
 @media only screen and (max-width: 1240px) {
@@ -122,6 +140,9 @@ ul {
     }
     .container {
         margin: auto;
+    }
+    .insta-container {
+        max-width: 900px;
     }
 }
 
