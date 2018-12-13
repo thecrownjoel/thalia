@@ -7,6 +7,7 @@ $.getJSON(jsonURL, function (json)
         if (++i > 9) {
             return false;
     }
+    console.log(this);
         imgList += '<li><img src= "' + this.image + '"></li>';
     });
 
