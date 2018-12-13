@@ -25,7 +25,7 @@ h3 {
 }
 
 .container {
-  border: 1px solid white;
+  border: 1px dotted white;
   max-width: 900px;
 }
 
@@ -78,10 +78,6 @@ h2 {
 }
 
 /* buy buttons */
-.buy-btns ul {
-  list-style: none;
-}
-
 .buy-btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,15 +91,24 @@ h2 {
           justify-content: center;
 }
 
+.buy-btns ul {
+  list-style: none;
+}
+
 .buy-btns li {
   display: inline-block;
   padding: 10px;
 }
 
+.buy-btns li a:hover {
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
 /* YouTube box */
 /* Instagram */
 .insta-container {
-  border: 3px solid white;
+  border: 1px dotted white;
   margin: auto;
 }
 
@@ -132,9 +137,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   max-width: 50%;
   border: 3px solid black;
   height: auto;

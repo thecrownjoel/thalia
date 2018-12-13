@@ -28,7 +28,7 @@ h3 {
     font-size: 3rem;
 }
 .container {
-    border: 1px solid white;
+    border: 1px dotted white;
     max-width: 900px;
 
 }
@@ -83,26 +83,31 @@ ul {
 
 
   /* buy buttons */
-  .buy-btns ul {
-      list-style: none;
-  }
-  .buy-btns {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-  }
-  .buy-btns li {
-    display: inline-block;
-    padding: 10px;
-  }
 
+  .buy-btns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+      ul {
+          list-style: none;
+      }
+      li {
+        display: inline-block;
+        padding: 10px;
+      }
+      li a:hover {
+        transition: opacity .3s;
+    }
+  }
+  
+ 
 
   /* YouTube box */
 
   
 /* Instagram */
 .insta-container {
-    border: 3px solid white;
+    border: 1px dotted white;
     margin: auto;
     h3 {
         font-weight: 700;
@@ -123,7 +128,7 @@ ul {
     }
     img {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     max-width: 50%;
     border: 3px solid black;
     height: auto;
