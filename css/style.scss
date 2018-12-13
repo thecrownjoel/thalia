@@ -13,7 +13,7 @@ body {
 .btn {
     background-color: #000;
     border: .125rem solid #000;
-    color: #fff !important;
+    color: #fff;
     display: inline-block;
     font-size: 1.125rem;
     max-width: 100%;
@@ -28,7 +28,6 @@ h3 {
     font-size: 3rem;
 }
 .container {
-    border: 1px dotted white;
     max-width: 900px;
 
 }
@@ -107,7 +106,6 @@ ul {
   
 /* Instagram */
 .insta-container {
-    border: 1px dotted white;
     margin: auto;
     h3 {
         font-weight: 700;
@@ -142,10 +140,10 @@ ul {
 }
 
 .btn {
-    a:link, a:visited, a:active {
-        background-color: red;
+    &:link, &:visited, &:active {
+        background-color: #000;
     }
-    a:hover {
+    &:hover {
         background-color: #fff;
         transition: all 0.3s;
         color: #000;
