@@ -115,6 +115,20 @@ ul {
         margin-bottom: 4.375rem;
     }
 }
+#images {
+    li {
+        list-style: none;
+        display: inline-block;
+        padding: 2rem;
+    }
+    img {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 50%;
+    border: 3px solid black;
+    height: auto;
+    }
+}
 
 /* Footer */
 
@@ -132,6 +146,7 @@ ul {
         color: #000;
     }
 }
+
 
 /* Media Queries */
 @media only screen and (max-width: 1240px) {

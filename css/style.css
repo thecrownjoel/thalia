@@ -122,6 +122,24 @@ h2 {
   margin-bottom: 4.375rem;
 }
 
+#images li {
+  list-style: none;
+  display: inline-block;
+  padding: 2rem;
+}
+
+#images img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 50%;
+  border: 3px solid black;
+  height: auto;
+}
+
 /* Footer */
 .enterSite-center {
   text-align: center;
