@@ -96,7 +96,11 @@ ul {
       }
       li a:hover {
         transition: opacity .3s;
-    }
+      }
+      img:hover {
+        transition: all 0.3s;
+        opacity: 0.8;
+      }
   }
   
  
@@ -119,18 +123,21 @@ ul {
     }
 }
 #images {
-    li {
-        list-style: none;
-        display: inline-block;
+    div {
+        display: flex;
+        justify-content: space-between;
         padding: 2rem;
+        flex-wrap: wrap;
     }
     img {
-    display: flex;
-    justify-content: space-evenly;
     max-width: 50%;
-    border: 3px solid black;
     height: auto;
+    background-color: #000;
+    background-size: cover;
     }
+    img:hover {
+        opacity: 0.5;
+        }
 }
 
 /* Footer */

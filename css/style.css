@@ -104,6 +104,12 @@ h2 {
   transition: opacity .3s;
 }
 
+.buy-btns img:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0.8;
+}
+
 /* YouTube box */
 /* Instagram */
 .insta-container {
@@ -125,22 +131,27 @@ h2 {
   margin-bottom: 4.375rem;
 }
 
-#images li {
-  list-style: none;
-  display: inline-block;
-  padding: 2rem;
-}
-
-#images img {
+#images div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#images img {
   max-width: 50%;
-  border: 3px solid black;
   height: auto;
+  background-color: #000;
+  background-size: cover;
+}
+
+#images img:hover {
+  opacity: 0.5;
 }
 
 /* Footer */
