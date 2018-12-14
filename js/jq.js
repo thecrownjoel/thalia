@@ -16,3 +16,4 @@ $.getJSON(jsonURL, function (json)
 
     $('#images').append(imgList);
 });
+

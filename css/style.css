@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 /* Main CSS */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #ffafda url("../img/thalia-pic.jpg") right 0 no-repeat;
   background-size: 50% auto;
@@ -54,7 +58,6 @@ ul {
   color: #d0688d;
   font-size: 1.375rem;
   opacity: 0.6;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -78,16 +81,9 @@ h2 {
 
 /* buy buttons */
 .buy-btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .buy-btns ul {
@@ -100,12 +96,10 @@ h2 {
 }
 
 .buy-btns li a:hover {
-  -webkit-transition: opacity .3s;
   transition: opacity .3s;
 }
 
 .buy-btns img:hover {
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0.8;
 }
@@ -114,40 +108,35 @@ h2 {
 /* Instagram */
 .insta-container {
   margin: auto;
+  max-width: 1000px;
 }
 
 .insta-container h3 {
   font-weight: 700;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-family: "Montserrat", sans-serif;
   letter-spacing: .1em;
   text-transform: uppercase;
   margin-bottom: 4.375rem;
 }
 
-#images div {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#images {
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#images div {
   padding: 2rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-basis: 33.25%;
 }
 
 #images img {
-  max-width: 50%;
-  height: auto;
+  max-width: 100%;
   background-color: #000;
-  background-size: cover;
+  object-fit: scale-down;
 }
 
 #images img:hover {
@@ -165,7 +154,6 @@ h2 {
 
 .btn:hover {
   background-color: #fff;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   color: #000;
 }
@@ -182,4 +170,3 @@ h2 {
     max-width: 900px;
   }
 }
-/*# sourceMappingURL=style.css.map */

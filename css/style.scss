@@ -6,6 +6,9 @@ $bg-color: #ffafda;
 
 
 /* Main CSS */
+* {
+    box-sizing: border-box;
+}
 body {
     background: $bg-color url('../img/thalia-pic.jpg') right 0 no-repeat;
     background-size: 50% auto;
@@ -111,6 +114,7 @@ ul {
 /* Instagram */
 .insta-container {
     margin: auto;
+    max-width: 1000px;
     h3 {
         font-weight: 700;
         color: white;
@@ -123,17 +127,17 @@ ul {
     }
 }
 #images {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
     div {
-        display: flex;
-        justify-content: space-between;
         padding: 2rem;
-        flex-wrap: wrap;
+        flex-basis: 33.25%; 
     }
     img {
-    max-width: 50%;
-    height: auto;
+    max-width: 100%;
     background-color: #000;
-    background-size: cover;
+    object-fit:scale-down;
     }
     img:hover {
         opacity: 0.5;
